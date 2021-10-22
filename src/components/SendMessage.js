@@ -25,7 +25,7 @@ function SendMessage({ scroll }) {
     <>
       <div>
         <Button
-          href="Login"
+          href="/"
           style={{
             width: "50%",
             fontSize: "15px",
