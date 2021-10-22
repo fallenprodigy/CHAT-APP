@@ -8,6 +8,8 @@ import Login from "./Login";
 import PrivateRoute from "./PrivateRoute";
 import ForgotPassword from "./ForgotPassword";
 import UpdateProfile from "./UpdateProfile";
+import Chat from "./Chat";
+import SendMessage from "./SendMessage";
 
 function App() {
   return (
@@ -18,19 +20,28 @@ d-flex align-items-center justify-content-center"
         minHeight: "100vh",
       }}
     >
-      <div className="w-100" style={{ maxWidth: "400px" }}>
+      <div
+        className="w-100"
+        style={{
+          maxWidth: "400px",
+        }}
+      >
         <Router>
           <AuthProvider>
             <Switch>
               <PrivateRoute exact path="/" component={Dashboard} />
               <PrivateRoute path="/update-profile" component={UpdateProfile} />
-              <Route path="/signup" component={Signup} />
+              <PrivateRoute path="/signup" component={Signup} />
               <Route path="/login" component={Login} />
+              {/* <Route path="/chat" component={Chat} /> */}
+              <Route path="/send-message" component={SendMessage} />
+
               <Route path="/forgot-password" component={ForgotPassword} />
             </Switch>
           </AuthProvider>
         </Router>
       </div>
+      <Chat />
     </Container>
   );
 }

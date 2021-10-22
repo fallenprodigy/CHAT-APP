@@ -18,9 +18,9 @@ export default function ForgotPassword() {
       setError("");
       setLoading(true);
       await resetPassword(emailRef.current.value);
-      setMessage("BRO CHECK YOUR EMAIL");
+      setMessage("CHECK YOUR EMAIL");
     } catch {
-      setError("BRO U SUCK");
+      setError("DUDE U SUCK");
     }
     setLoading(false);
   }
