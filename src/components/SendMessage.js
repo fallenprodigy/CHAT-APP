@@ -24,6 +24,19 @@ function SendMessage({ scroll }) {
   return (
     <>
       <div>
+        <Button
+          href="Login"
+          style={{
+            width: "50%",
+            fontSize: "15px",
+            fontWeight: "555",
+            margin: "-550px 5% 80px 50%",
+            maxWidth: "200px",
+          }}
+          type="submit"
+        >
+          Back
+        </Button>
         <form onSubmit={sendMessage}>
           <div className="sendMsg">
             <Input
