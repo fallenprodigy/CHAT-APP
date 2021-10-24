@@ -2,7 +2,8 @@ import React, { useRef, useState } from "react";
 import { Form, Button, Card, Alert } from "react-bootstrap";
 import { useAuth } from "../contexts/AuthContext";
 import { Link, useHistory } from "react-router-dom";
-import Chat from "./Chat";
+import App from "./App";
+import Signup from "./Signup";
 
 export default function Login() {
   const emailRef = useRef();

@@ -31,9 +31,9 @@ d-flex align-items-center justify-content-center"
             <Switch>
               <PrivateRoute exact path="/" component={Dashboard} />
               <PrivateRoute path="/update-profile" component={UpdateProfile} />
-              <PrivateRoute path="/signup" component={Signup} />
+              <Route path="/signup" component={Signup} />
               <Route path="/login" component={Login} />
-              {/* <Route path="/chat" component={Chat} /> */}
+              <Route path="/chat" component={Chat} />
               <Route path="/send-message" component={SendMessage} />
 
               <Route path="/forgot-password" component={ForgotPassword} />
@@ -41,7 +41,7 @@ d-flex align-items-center justify-content-center"
           </AuthProvider>
         </Router>
       </div>
-      <Chat />
+      {/* <Chat /> */}
     </Container>
   );
 }

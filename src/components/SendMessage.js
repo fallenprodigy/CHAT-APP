@@ -10,16 +10,16 @@ function SendMessage({ scroll }) {
 
   async function sendMessage(e) {
     e.preventDefault();
-    const { uid, photoURL } = auth.currentUser;
+    // const { uid, photoURL } = auth.currentUser;
 
     await db.collection("messages").add({
       text: msg,
-      photoURL,
-      uid,
+      // photoURL,
+      // uid,
       createdAt: firebase.firestore.FieldValue.serverTimestamp(),
     });
     setMsg("");
-    scroll.current.scrollIntoView({ behavior: "smooth" });
+    // scroll.current.scrollIntoView({ behavior: "smooth" });
   }
   return (
     <>

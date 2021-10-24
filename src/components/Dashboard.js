@@ -28,7 +28,7 @@ export default function Dashboard() {
           <Link to="/update-profile" className="btn btn-primary w-100 mt-3">
             UPDATE PROFILE
           </Link>
-          <Link to="/sendmessage" className="btn btn-primary w-100 mt-3">
+          <Link to="/send-message" className="btn btn-primary w-100 mt-3">
             CHAT WITH PEOPLE
           </Link>
         </Card.Body>
